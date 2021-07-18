@@ -6,24 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pong</title>
     <link rel="stylesheet" href="table.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="platform">
         <div class="details">
             <div class="player1">
                 <div class="player">
-                    <div class="favicon avatar1"></div>
-                    <div class="playerName">Seema</div>
+                    <div class="favicon">
+                        <img class="avatar1" onClick="changeAvatar1()" src="avatars/avatar2.jpg">
+                    </div>
+                    <div class="playerName" onClick="remove1()" contenteditable="true">Player-1</div>
                 </div>
-                <div class="playerScore"></div>
+                <div class="playerScore">
+                    <img class="life" src="life.png">
+                    <img class="life" src="life.png">
+                    <img class="life" src="life.png">
+                    <img class="life" src="life.png">
+                    <img class="life" src="life.png">
+                </div>
             </div>
             <p class="versus">v/s</p>
             <div class="player2">
                 <div class="player">
-                    <div class="favicon avatar2"></div>
-                    <div class="playerName">Sneha</div>
+                    <div class="favicon">
+                        <img class="avatar2" onClick="changeAvatar2()" src="avatars/avatar2.jpg">
+                    </div>
+                    <div class="playerName" onClick="remove2()" contenteditable="true">Player-2</div>
                 </div>
-                <div class="playerScore"></div>
+                <div class="playerScore">
+                    <img class="life" src="life.png">
+                    <img class="life" src="life.png">
+                    <img class="life" src="life.png">
+                    <img class="life" src="life.png">
+                    <img class="life" src="life.png">
+                </div>
             </div>
         </div>
         <div class="playArea">
@@ -35,6 +52,7 @@
                 </div>
             </div>
         </div>
+        <div class="startButton" >START</div>
     </div> 
     <script src="table.js"></script>
 </body>

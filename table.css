@@ -6,7 +6,8 @@
 .platform{
     height: 100vh;
     width: 100vw;
-    background-image: url("details.jpg");    background-size: cover;
+    background-image: url("details.jpg");    
+    background-size: cover;
 }
 .details{
     height: 15vh;
@@ -18,8 +19,9 @@
 .player1,.player2{
     height: 90%;
     width: 40vh;
-    margin-right: 30px;
-    margin-left: 30px;
+}
+.player2{
+    margin-left: 120px;
 }
 .player{
     height: 50%;
@@ -36,18 +38,20 @@
     cursor: pointer;
     transform: scale(1.1);
 }
-.avatar1{
-    background-image: url(avatar1.jpg);
-    background-size: contain;
-}
-.avatar2{
-    background-image: url(avatar2.jpg);
-    background-size: contain;
+.avatar2,.avatar1{
+    height: 6.5vh;
+    border-radius: 50%;
 }
 .playerScore{
     height: 50%;
     width: 100%;
-    border: 2px solid red;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.life{
+    height: 42px;
+    width: 42px;
 }
 .playerName{
     height: 100%;
@@ -56,6 +60,11 @@
     font-size: 5vh;
     text-shadow: 2px 2px 1px grey;
     font-family: 'Permanent Marker', cursive;
+    outline: none;
+    text-transform: capitalize;
+}
+.playerName:hover{
+    cursor: pointer;
 }
 .versus{
     font-size: 5vh;
@@ -117,4 +126,52 @@
 .paddleRight{
     top: 49vh;
     right: 19vw;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.winnerName{
+    font-size: 10vh;
+    text-transform: capitalize;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(175, 226, 81);
+    width: 25vw;
+    text-shadow: 2px 2px 1px grey;
+}
+.wins{
+    font-size: 8vh;
+    color: rgb(204, 238, 142);
+    text-shadow: 2px 2px 2px grey;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    text-transform: uppercase;
+}
+.winningEmoji img{
+    height: 60vh;
+    width: 60vh;
+    margin-top: 8vh;
+}
+.startButton{
+    position: fixed;
+    top: 80vh;
+    left: 5vh;
+    height: 8vh;
+    width: 10vw;
+    border-radius: 15px;
+    box-shadow: -2px -2px 2px 2px rgba(37, 12, 107, 0.5),
+    1px 1px 1px 1px #533eb34d, inset -10px -10px 15px rgba(40, 15, 107, 0.6), inset 10px 10px 15px rgba(140, 124, 212, 0.425);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    font-size: 5vh;
+    background-image: url();
+}
+.startButton:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(37, 12, 107, 0.5),
+    -1px -1px 1px 1px #533eb34d, inset 10px 10px 15px rgba(40, 15, 107, 0.6), inset -10px -10px 15px rgba(140, 124, 212, 0.425)
 }
