@@ -9,9 +9,9 @@ start.addEventListener("click", function(){
     <div class="form">
         <div class="elements">
             <label for="fname">Player 1 :</label>
-            <input type="text" class="input" id="fname" name="fname" value="Astro..."><br>
+            <input type="text" class="input" onfocus="this.value=''" id="player1" name="fname" value="Astro..." required><br>
             <label for="lname">Player 2 :</label>
-            <input type="text" class="input" id="lname" name="lname" value="Knicks..."><br>
+            <input type="text" class="input" onfocus="this.value=''" id="player2" name="lname" value="Knicks..." required><br>
             <label for="score">Score Limit :</label>
             <input type="radio" id="score" name="score" value="1">
             <label for="lname">1</label>
@@ -20,15 +20,18 @@ start.addEventListener("click", function(){
             <input type="radio" id="score" name="score" value="1">
             <label for="lname">5</label><br>
             <label for="level">Difficulty level :</label>
-            <select name="level" id="level">
+            <select name="level" id="level" required>
                 <option>Easy</option>
                 <option>Medium</option>
                 <option>Hard</option>
             </select><br>
-            <input class="submit" type="submit" value="Go">
+            <div class="submit">
+                <a class="go" href="table.html">GO</a>
+            </div>
         </div>
     </div>
 </div>`
+
 background.appendChild(modal);
 modalVisible = true;
 })
