@@ -76,7 +76,7 @@ setTimeout(
                     result.classList.add("result-container");
                     result.innerHTML = `<div class="result">
                     <div class="winner">
-                        <div class="winnerName">${name1}</div>
+                        <div class="winnerName">${name2}</div>
                         <div class="wins">Wins</div>
                     </div>
                     <div class="winningEmoji">
@@ -99,7 +99,7 @@ setTimeout(
                     result.classList.add("result-container");
                     result.innerHTML = `<div class="result">
                     <div class="winner">
-                        <div class="winnerName">${name2}</div>
+                        <div class="winnerName">${name1}</div>
                         <div class="wins">Wins</div>
                     </div>
                     <div class="winningEmoji">
@@ -149,8 +149,8 @@ setTimeout(
         ball.style.top = y == true? ballTop + 8 + "px" : ballTop - 8 + "px";
         ball.style.left = x == true? ballLeft + 8 + "px" : ballLeft - 8 + "px";
     
-        //requestAnimationFrame(moveBall);
-}, 3000);
-//requestAnimationFrame(moveBall);
+        requestAnimationFrame(moveBall);
+}, 20000);
+requestAnimationFrame(moveBall);
 
 
