@@ -103,7 +103,7 @@ setTimeout(
                         <div class="wins">Wins</div>
                     </div>
                     <div class="winningEmoji">
-                        <img src="result2.gif">
+                        <img src="result.gif">
                     </div>
                 </div>`;
                     board.appendChild(result);
